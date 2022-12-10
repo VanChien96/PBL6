@@ -1,0 +1,9 @@
+.guide{
+    width: calc((100% - 326px));
+    margin-top: 40px;
+    &-img{
+        object-fit: cover;
+        padding-left: 35%;
+        padding-bottom: 20px;
+    }
+}

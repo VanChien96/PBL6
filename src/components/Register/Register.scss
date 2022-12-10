@@ -1,0 +1,27 @@
+.register{
+    width: 30%;
+    height: 30%;
+    margin-top: 8%;
+    margin-left: 35%;
+    background-color: rgba(165, 235, 139, 0.187);
+    border-radius: 20px;
+    box-shadow: 5px 10px rgba(0, 0, 0, 0.176);
+    animation: slideUp 1s linear;
+    &-title{
+    font-size: 40px;
+        padding-bottom: 5% ;
+        padding-left: 32%;
+        padding-top: 5%;
+    }
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.logo{
+  width: 50px;
+  position: absolute;
+  top: 0;
+  transform: translateY(-15px);
+}

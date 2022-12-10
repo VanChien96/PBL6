@@ -1,0 +1,17 @@
+body{
+    margin: 0;
+}
+.navbar{
+    background-color: rgb(38, 162, 71);
+    height: 100px;
+    width: 100vw;
+    position: relative;
+}
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 163px;
+    padding-right: 163px;
+    padding-top: 27px;
+    padding-bottom: 27px;
+}
