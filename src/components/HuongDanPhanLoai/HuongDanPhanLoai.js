@@ -11,7 +11,7 @@ export default function HuongDanPhanLoai() {
     const [op, setOp] = useState({})
 
     useEffect(()=>{
-      fetch(`http://localhost:8000/user/detail/${user}`)
+      fetch(`https://be-garbage-classification.vercel.app/user/detail/${user}`)
       .then(res => res.json())
       .then(data => setOp(data.result[0]))
     },[])

@@ -21,7 +21,7 @@ export default function Changeprofile() {
   let {user} = useParams()
 
   useEffect(()=>{
-    fetch(`http://localhost:8000/user/detail/${user}`)
+    fetch(`https://be-garbage-classification.vercel.app/user/detail/${user}`)
     .then(res => res.json())
     .then(data =>  setData1(data.result[0]))
   },[])
@@ -44,7 +44,7 @@ export default function Changeprofile() {
 
   const handleSubmit = () =>{
     if (name && phone && address){
-      fetch((`http://localhost:8000/user/update_user/${user}`),{
+      fetch((`https://be-garbage-classification.vercel.app/user/update_user/${user}`),{
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json'

@@ -43,7 +43,7 @@ export default function Identified() {
 		formData.append('file', selectedFile);
 
 		fetch(
-			'http://localhost:8000/recognite/receive_photo',
+			'https://be-garbage-classification.vercel.app/recognite/receive_photo',
 			{
 				method: 'POST',
 				body: formData,
@@ -60,7 +60,7 @@ export default function Identified() {
 
   useEffect(()=>{
 
-    fetch(`http://127.0.0.1:5000/api/v1/predict/?url=${url}`).
+    fetch(`https://6bbb-2402-800-629c-d825-44fc-343d-3ce2-31ec.ap.ngrok.io//api/v1/predict/?url=${url}`).
     then(res => res.json())
     .then(data => setAccuracy(data))
   

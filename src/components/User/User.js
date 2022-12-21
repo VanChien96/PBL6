@@ -15,7 +15,7 @@ export default function User() {
     let {user} = useParams()
 
   useEffect(()=>{
-    fetch(`http://localhost:8000/user/detail/${user}`)
+    fetch(`https://be-garbage-classification.vercel.app/user/detail/${user}`)
     .then(res => res.json())
     .then(data =>  setData1(data.result[0]))
   },[])

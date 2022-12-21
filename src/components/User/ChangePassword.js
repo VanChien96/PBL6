@@ -23,7 +23,7 @@ export default function ChangePassword() {
   const [test, setTest] = useState()
 
   useEffect(()=>{
-    fetch(`http://localhost:8000/user/detail/${user}`)
+    fetch(`https://be-garbage-classification.vercel.app/user/detail/${user}`)
     .then(res => res.json())
     .then(data =>  setData1(data.result[0]))
   },[])
@@ -41,7 +41,7 @@ export default function ChangePassword() {
   const handleSubmit = ( ) =>{
     if (password){
       if (password2){
-        fetch((`http://localhost:8000/user/update_pass/${user}`),{
+        fetch((`https://be-garbage-classification.vercel.app/user/update_pass/${user}`),{
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json'
