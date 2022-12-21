@@ -41,7 +41,7 @@ const Register = () => {
     }
 
     const handleRegister = async (opject) =>{
-        await fetch(`http://localhost:8000/user/register`,{
+        await fetch(`https://be-garbage-classification.vercel.app/user/register`,{
             method: 'POST',
             headers: {
             'Content-Type': 'application/json'

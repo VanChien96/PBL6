@@ -43,7 +43,7 @@ const Login = () => {
                         "Password": password}
     const handlePost = () =>{
 
-        fetch(`http://localhost:8000/user/login`,{
+        fetch(`https://be-garbage-classification.vercel.app/user/login`,{
             method: 'POST',
             headers: {
             'Content-Type': 'application/json'
