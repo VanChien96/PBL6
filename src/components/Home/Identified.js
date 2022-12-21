@@ -60,7 +60,7 @@ export default function Identified() {
 
   useEffect(()=>{
 
-    fetch(`https://6bbb-2402-800-629c-d825-44fc-343d-3ce2-31ec.ap.ngrok.io//api/v1/predict/?url=${url}`).
+    fetch(`https://6bbb-2402-800-629c-d825-44fc-343d-3ce2-31ec.ap.ngrok.io/api/v1/predict/?url=${url}`).
     then(res => res.json())
     .then(data => setAccuracy(data))
   
