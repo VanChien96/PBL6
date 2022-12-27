@@ -43,6 +43,7 @@ export default function Changeprofile() {
   }
 
   const handleSubmit = () =>{
+    console.log(op)
     if (name && phone && address){
       fetch((`https://be-garbage-classification.vercel.app/user/update_user/${user}`),{
         method: 'PUT',
@@ -54,13 +55,13 @@ export default function Changeprofile() {
       .then(res => res.json())
       .then(data => console.log(data.msg))
 
-      navigate(`/user/${user}`)
+      navigate(`/${user}`);
+      toast.success("Bạn đã thay đổi thông tin thành công !!!")
     }else{
       toast.success('Không được để trống nội dung !!!')
     }
   }
 
-  console.log(name)
   return (
     <section className='userpage'>
       <Header/>
@@ -132,16 +133,7 @@ export default function Changeprofile() {
                     <br />
                 </div>
                 <div>
-                    <div className='login-text'>
-                        <FontAwesomeIcon className="login-icon" icon={faLock} />
-                        <input
-                        type="password"
-                        className="login-input"
-                        name="password"
-                        readOnly
-                        value={data1.Password}
-                        />
-                    </div>
+                    
                     <br />
                 </div>
                 

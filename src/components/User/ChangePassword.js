@@ -29,7 +29,7 @@ export default function ChangePassword() {
   },[])
 
   const handleUserProfile = () => {
-    navigate(`/user/${data1.Id_User}`)
+    navigate(`/${user}`);
   }
 
   const op = {

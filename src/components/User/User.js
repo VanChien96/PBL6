@@ -24,7 +24,7 @@ export default function User() {
     Aos.init({ duration: 1500 })
   },[])
 
-  console.log(data1)
+//   console.log(data1)
   return (
     <section className='userpage'>
       <Header/>
@@ -88,18 +88,6 @@ export default function User() {
                         />
                     </div>
                     <br />
-                </div>
-                <div>
-                    <div className='login-text'>
-                        <FontAwesomeIcon className="login-icon" icon={faLock} />
-                        <input
-                        type="password"
-                        className="login-input"
-                        name="password"
-                        readOnly
-                        value={data1.Password}
-                        />
-                    </div>
                     <br />
                 </div>
                 <button className="login-btn userpage-btn" onClick={() => navigate(`/changeprofile/${user}`)} >

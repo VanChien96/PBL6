@@ -60,7 +60,13 @@ export default function Identified() {
 
   useEffect(()=>{
 
-    fetch(`https://6bbb-2402-800-629c-d825-44fc-343d-3ce2-31ec.ap.ngrok.io/api/v1/predict/?url=${url}`).
+    fetch(`http://35.240.128.104:3000/api/v1/predict/?url=${url}`,
+    {
+      method: "get",
+      headers: new Headers({
+        "ngrok-skip-browser-warning": "69420",
+      }),
+    }).
     then(res => res.json())
     .then(data => setAccuracy(data))
   
